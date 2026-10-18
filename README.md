@@ -8,7 +8,7 @@
 
 <img src="assets/about.svg" width="100%" alt="whoami: bioinformatician and data analyst, MSc Bioinformatics and Computational Biology, University College Cork. Background: NGS assay development, 16S microbiome, qPCR and in vivo studies, now Python, R and SQL pipelines. Every project: data fingerprinted, automatic quality checks, tested on unseen data, beats a simple baseline, uncertainty shown, interactive report. Looking for graduate and junior roles in bioinformatics, clinical / life-science data and data analysis, and PhD positions.">
 
-<img src="assets/stats.svg" width="100%" alt="16 research and data projects · 9 live interactive reports · 40,124 clinical trials analysed · 100GB+ sequencing data processed">
+<img src="assets/stats.svg" width="100%" alt="17 research and data projects · 10 live interactive reports · 40,124 clinical trials analysed · 100GB+ sequencing data processed">
 
 <img src="assets/section-work.svg" width="100%" alt="Featured work">
 
@@ -31,6 +31,10 @@
 <td width="50%"><a href="https://bymankirat.github.io/irish-water-low-flow-warning/"><img src="assets/card-flow.svg" width="100%" alt="River low-flow early warning"></a></td>
 <td width="50%"><a href="https://bymankirat.github.io/H7N9-Transcriptomics-Pipeline/"><img src="assets/card-h7n9.svg" width="100%" alt="What makes H7N9 different? Host response to four flu strains"></a></td>
 </tr>
+<tr>
+<td width="50%"><a href="https://bymankirat.github.io/SOG1-Banana-Comparative-Genomics/"><img src="assets/card-sog1.svg" width="100%" alt="SOG1 in banana, phase 2: 17 plant genomes, ML tree, SOG1 binding sites 3 times enriched at target genes"></a></td>
+<td width="50%"><a href="https://bymankirat.github.io/ireland-unemployment-outlook/"><img src="assets/card-jobs.svg" width="100%" alt="Irish unemployment outlook"></a></td>
+</tr>
 </table>
 
 <details>
@@ -47,6 +51,7 @@
 | Health and deprivation | [Report](https://bymankirat.github.io/ireland-census-health/) · [Code](https://github.com/bymankirat/ireland-census-health) |
 | River low-flow warning | [Report](https://bymankirat.github.io/irish-water-low-flow-warning/) · [Code](https://github.com/bymankirat/irish-water-low-flow-warning) |
 | What makes H7N9 different? (R, limma, fgsea, WGCNA) | [Report](https://bymankirat.github.io/H7N9-Transcriptomics-Pipeline/) · [Code](https://github.com/bymankirat/H7N9-Transcriptomics-Pipeline) |
+| SOG1 in banana, phase 2 (Python, HMMER, IQ-TREE, dN/dS) | [Report](https://bymankirat.github.io/SOG1-Banana-Comparative-Genomics/) · [Code](https://github.com/bymankirat/SOG1-Banana-Comparative-Genomics) |
 | Irish unemployment outlook | [Report](https://bymankirat.github.io/ireland-unemployment-outlook/) · [Code](https://github.com/bymankirat/ireland-unemployment-outlook) |
 </details>
 
@@ -60,7 +65,7 @@
 
 - **MSc thesis · IBIMA Plataforma BIONAND, Málaga (2026):** gut microbiota and faecal metabolomics after bariatric surgery; 100GB+ of 16S rRNA sequencing data in QIIME2 and multi-omics integration in R (mixOmics), 15+ candidate biomarkers
 - **R&D · Premas Life Sciences, New Delhi (2024-25):** NGS diagnostic kits for *Mycobacterium tuberculosis* and 3 other infections; Illumina workflow 20% more efficient
-- **Research · NABI, Mohali (2023, 2024):** *Cyp19a1* expression across human and mouse models; *Ma-SOG1* expression vectors in banana
+- **Research · NABI, Mohali (2023, 2024):** *Cyp19a1* expression across human and mouse models; *Ma-SOG1* expression vectors in banana, followed up in [phase 2](https://bymankirat.github.io/SOG1-Banana-Comparative-Genomics/) across 17 plant genomes
 - **Summer research · DS Kothari Centre, Miranda House (2023):** microtomy and H&E staining, research poster
 </details>
 

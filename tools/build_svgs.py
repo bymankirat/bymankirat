@@ -267,6 +267,32 @@ def vis_h7n9():
     return "".join(out)
 
 
+def vis_sog1():
+    # phylogram: banana SOG1 (lime) inside the SOG1 clade, an early land-plant copy at the base
+    out = [frame()]
+    tips = 8
+    ys = [VY0 + 8 + i * (VY1 - VY0 - 16) / (tips - 1) for i in range(tips)]
+    xr = VX1 - 46
+    # (y-index pairs joined, x of join) built bottom-up
+    joins = [((0, 1), xr - 26), ((2, 3), xr - 34), ((0.5, 2.5), xr - 60), ((4, 5), xr - 30), ((4.5, 6), xr - 70),
+             ((1.5, 5.25), xr - 104), ((3.375, 7), xr - 150)]
+    yat = lambda k: ys[0] + k * (ys[1] - ys[0])
+    xs = {}
+    for i in range(tips):
+        xs[float(i)] = xr - (60 if i == 7 else 0)
+    for n, ((a, b), xj) in enumerate(joins):
+        ya, yb = yat(a), yat(b)
+        out.append(f'<path class="draw" pathLength="1" style="animation-delay:{n * .18:.2f}s" d="M{xs[float(a)]:.1f},{ya:.1f} H{xj:.1f} V{yb:.1f} H{xs[float(b)]:.1f}" fill="none" stroke="{MUTED}" stroke-opacity=".8" stroke-width="1.6"/>')
+        xs[(a + b) / 2] = xj
+    for i, y in enumerate(ys):
+        col = LIME if i == 2 else (VI if i == 7 else CY)
+        x = xs[float(i)]
+        out.append(f'<circle class="pop" style="animation-delay:{1.2 + i * .08:.2f}s" cx="{x + 4:.1f}" cy="{y:.1f}" r="{4.5 if i == 2 else 3}" fill="{col}"{" filter=\"url(#neonsog1)\"" if i == 2 else ""}/>')
+    out.append(f'<text x="{xs[2.0] + 12:.1f}" y="{ys[2] + 4:.1f}" font-family="{MONO}" font-size="10" fill="{LIME}">MaSOG1</text>')
+    out.append(f'<text x="{xs[7.0] + 12:.1f}" y="{ys[7] + 4:.1f}" font-family="{MONO}" font-size="10" fill="{MUTED}">moss</text>')
+    return "".join(out)
+
+
 CARDS = [
     ("trials", "CLINICAL TRIALS · PYTHON", "Why clinical trials stop early", "40,124 trials · interactive trial explorer", "1 in 6", "stopped early", ["scikit-learn", "API", "risk model"], vis_trials, CY),
     ("cdisc", "CLINICAL · R · CDISC", "Trial safety: SDTM to ADaM", "Alzheimer's drug trial · 254 patients", "100%", "independent QC agreement", ["admiral", "survival", "SQL"], vis_km, PK),
@@ -276,6 +302,7 @@ CARDS = [
     ("health", "PUBLIC HEALTH · CENSUS", "Health and deprivation", "3,420 Irish communities, Census 2022", "63%", "explained by social factors", ["regression", "clustering"], vis_health, VI),
     ("flow", "WATER · EARLY WARNING", "River low-flow warning", "7-day warning from 21 years of data", "4 of 4", "episodes flagged a week ahead", ["random forest", "hydrology"], vis_flow, CY),
     ("h7n9", "VIROLOGY · R · TRANSCRIPTOMICS", "What makes H7N9 different?", "4 flu strains × 4 time points · 78 arrays", "1,279", "genes unique to H7N9 at 24 h", ["limma", "fgsea", "WGCNA"], vis_h7n9, PK),
+    ("sog1", "PLANT GENOMICS · PYTHON", "SOG1 in banana, phase 2", "17 plant genomes · ML tree · promoters", "3×", "SOG1 sites at target genes", ["HMMER", "IQ-TREE", "dN/dS"], vis_sog1, LIME),
     ("jobs", "LABOUR MARKET · FORECASTING", "Irish unemployment outlook", "Four models tested on 56 unseen months", "56", "months of honest backtesting", ["time series", "backtesting"], vis_jobs, PK),
 ]
 
@@ -434,7 +461,7 @@ def terminal():
 def stats():
     Wd, Hd = 1200, 150
     uid = "stats"
-    items = [("16", "research and data projects"), ("9", "live interactive reports"), ("40,124", "clinical trials analysed"), ("100GB+", "sequencing data processed")]
+    items = [("17", "research and data projects"), ("10", "live interactive reports"), ("40,124", "clinical trials analysed"), ("100GB+", "sequencing data processed")]
     tw = (Wd - 40 - 3 * 16) / 4
     out = []
     for i, (v, l) in enumerate(items):
@@ -446,7 +473,7 @@ def stats():
 .in{{}}
 {REDUCED}
 </style>"""
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{Wd}" height="{Hd}" viewBox="0 0 {Wd} {Hd}" role="img" aria-label="16 projects, 8 live interactive reports, 40,124 clinical trials analysed, 100GB+ sequencing data processed">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{Wd}" height="{Hd}" viewBox="0 0 {Wd} {Hd}" role="img" aria-label="17 projects, 10 live interactive reports, 40,124 clinical trials analysed, 100GB+ sequencing data processed">
 {css}{defs_common(uid)}
 <rect width="{Wd}" height="{Hd}" rx="18" fill="{BG}"/>
 {''.join(out)}
