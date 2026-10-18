@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="260" viewBox="0 0 520 260" role="img" aria-label="Irish unemployment outlook: Four models tested on 56 unseen months">
+<style>
+.k{font:700 10.5px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#F472B6;letter-spacing:2.2px}
+.t{font:700 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#E6EDF7}
+.s{font:400 13.5px -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#8A97AD}
+.kpi{font:800 40px -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;letter-spacing:-1px}
+.kl{font:500 12px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#8A97AD}
+.tag{font:500 11.5px -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#8A97AD}
+.go{font:700 12px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#E6EDF7}
+.scan{animation:sc 7s linear infinite}@keyframes sc{0%{transform:translateX(-200px)}60%,100%{transform:translateX(720px)}}
+.edge{animation:eg 6s ease-in-out infinite}@keyframes eg{0%,100%{stroke-opacity:.45}50%{stroke-opacity:.95}}
+.live{animation:lv 1.6s ease-in-out infinite}@keyframes lv{0%,100%{opacity:1}50%{opacity:.25}}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:dr 6s ease-out infinite}@keyframes dr{0%{stroke-dashoffset:1}55%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:0;opacity:.4}}
+.pop{opacity:0;animation:pp 6s ease-out infinite}@keyframes pp{0%,20%{opacity:0}40%,90%{opacity:1}100%{opacity:.4}}
+.grow{transform-box:fill-box;transform-origin:left center;animation:gw 6s ease-out infinite}@keyframes gw{0%{transform:scaleX(0)}45%,90%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:.4}}
+.rise{transform-box:fill-box;transform-origin:center bottom;animation:rs 6s ease-out infinite}@keyframes rs{0%{transform:scaleY(0)}45%,90%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:.4}}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pu 2.6s ease-in-out infinite}@keyframes pu{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.8);opacity:.35}}
+.ring{transform-box:fill-box;transform-origin:center;animation:rg 2.6s ease-out infinite}@keyframes rg{0%{transform:scale(.4);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+.blink{animation:bk 1.2s steps(1) infinite}@keyframes bk{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.rm{opacity:1!important;stroke-dashoffset:0!important}}
+</style><defs>
+<linearGradient id="edgejobs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+<linearGradient id="txtjobs" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE"/><stop offset=".55" stop-color="#8B5CF6"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+<linearGradient id="scanjobs" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<radialGradient id="glowAjobs"><stop offset="0" stop-color="#8B5CF6" stop-opacity=".35"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+<radialGradient id="glowBjobs"><stop offset="0" stop-color="#22D3EE" stop-opacity=".25"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+<filter id="neonjobs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="dotsjobs" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#2A3550"/></pattern>
+</defs><clipPath id="clipjobs"><rect width="520" height="260" rx="20"/></clipPath>
+<rect width="520" height="260" rx="20" fill="#060A13"/>
+<g clip-path="url(#clipjobs)"><rect width="520" height="260" fill="url(#dotsjobs)" opacity=".55"/>
+<circle cx="460" cy="40" r="170" fill="url(#glowAjobs)"/>
+<circle cx="40" cy="260" r="150" fill="url(#glowBjobs)"/>
+<rect class="scan" x="0" y="0" width="140" height="260" fill="url(#scanjobs)"/></g>
+<rect class="edge" x="1" y="1" width="518" height="258" rx="19" fill="none" stroke="url(#edgejobs)" stroke-width="1.5"/>
+<circle class="live" cx="30" cy="34" r="3.5" fill="#F472B6"/>
+<text class="k" x="42" y="38">LABOUR MARKET · FORECASTING</text>
+<text class="go" x="494" y="38" text-anchor="end">OPEN REPORT ↗</text>
+<text class="t" x="26" y="74">Irish unemployment outlook</text>
+<text class="s" x="26" y="96">Four models tested on 56 unseen months</text>
+<text class="kpi" x="26" y="160" fill="url(#txtjobs)" filter="url(#neonjobs)">56</text>
+<text class="kl" x="27" y="182">months of honest backtesting</text>
+<rect x="26.0" y="212" width="90.3" height="24" rx="12" fill="#ffffff" fill-opacity=".03" stroke="#8A97AD" stroke-opacity=".35"/><text x="71.2" y="228" class="tag" text-anchor="middle">time series</text><rect x="123.3" y="212" width="90.3" height="24" rx="12" fill="#ffffff" fill-opacity=".03" stroke="#8A97AD" stroke-opacity=".35"/><text x="168.5" y="228" class="tag" text-anchor="middle">backtesting</text>
+<g><line x1="292" x2="494" y1="112.0" y2="112.0" stroke="#2A3550" stroke-dasharray="2 4"/><line x1="292" x2="494" y1="140.7" y2="140.7" stroke="#2A3550" stroke-dasharray="2 4"/><line x1="292" x2="494" y1="169.3" y2="169.3" stroke="#2A3550" stroke-dasharray="2 4"/><line x1="292" x2="494" y1="198.0" y2="198.0" stroke="#2A3550" stroke-dasharray="2 4"/><path class="draw" pathLength="1" d="M292.0,180.8 L294.4,180.2 L296.8,179.7 L299.3,179.3 L301.7,179.1 L304.1,179.1 L306.5,179.3 L309.0,179.7 L311.4,180.2 L313.8,180.7 L316.2,181.1 L318.7,181.4 L321.1,181.4 L323.5,181.1 L325.9,180.5 L328.4,179.4 L330.8,178.0 L333.2,176.2 L335.6,174.1 L338.1,171.7 L340.5,169.0 L342.9,166.2 L345.3,163.3 L347.8,160.2 L350.2,157.1 L352.6,153.9 L355.0,150.8 L357.4,147.7 L359.9,144.7 L362.3,142.0 L364.7,139.5 L367.1,137.3 L369.6,135.7 L372.0,134.6 L374.4,134.2 L376.8,134.5 L379.3,135.6 L381.7,137.4 L384.1,140.0 L386.5,143.1 L389.0,146.8 L391.4,150.7 L393.8,154.9 L396.2,159.1 L398.7,163.1 L401.1,166.8 L403.5,170.0 L405.9,172.8 L408.4,175.0 L410.8,176.6 L413.2,177.7 L415.6,178.3 L418.0,178.6 L420.5,178.7 L422.9,178.6 L425.3,178.5 L427.7,178.5 L430.2,178.7 L432.6,179.0 L435.0,179.5 L437.4,180.0" fill="none" stroke="#22D3EE" stroke-width="2.4" filter="url(#neonjobs)"/><path class="pop" d="M437.4,180.0 L494,154.0 L494,206.0 Z" fill="#F472B6" fill-opacity=".22"/><line class="pop" x1="437.4" y1="180.0" x2="494" y2="177.0" stroke="#F472B6" stroke-width="2" stroke-dasharray="4 3"/><line x1="437.4" x2="437.4" y1="112" y2="198" stroke="#8A97AD" stroke-opacity=".4" stroke-dasharray="2 3"/><text x="441.4" y="120" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10" fill="#8A97AD">forecast</text></g>
+</svg>
