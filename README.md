@@ -8,7 +8,7 @@
 
 <img src="assets/about.svg" width="100%" alt="whoami: bioinformatician and data analyst, MSc Bioinformatics and Computational Biology, University College Cork. Background: NGS assay development, 16S microbiome, qPCR and in vivo studies, now Python, R and SQL pipelines. Every project: data fingerprinted, automatic quality checks, tested on unseen data, beats a simple baseline, uncertainty shown, interactive report. Looking for graduate and junior roles in bioinformatics, clinical / life-science data and data analysis, and PhD positions.">
 
-<img src="assets/stats.svg" width="100%" alt="16 research and data projects · 8 live interactive reports · 40,124 clinical trials analysed · 100GB+ sequencing data processed">
+<img src="assets/stats.svg" width="100%" alt="16 research and data projects · 9 live interactive reports · 40,124 clinical trials analysed · 100GB+ sequencing data processed">
 
 <img src="assets/section-work.svg" width="100%" alt="Featured work">
 
@@ -29,7 +29,7 @@
 </tr>
 <tr>
 <td width="50%"><a href="https://bymankirat.github.io/irish-water-low-flow-warning/"><img src="assets/card-flow.svg" width="100%" alt="River low-flow early warning"></a></td>
-<td width="50%"><a href="https://bymankirat.github.io/ireland-unemployment-outlook/"><img src="assets/card-jobs.svg" width="100%" alt="Irish unemployment outlook"></a></td>
+<td width="50%"><a href="https://bymankirat.github.io/H7N9-Transcriptomics-Pipeline/"><img src="assets/card-h7n9.svg" width="100%" alt="What makes H7N9 different? Host response to four flu strains"></a></td>
 </tr>
 </table>
 
@@ -46,6 +46,7 @@
 | Irish electricity demand | [Report](https://bymankirat.github.io/ireland-electricity-demand/) · [Code](https://github.com/bymankirat/ireland-electricity-demand) |
 | Health and deprivation | [Report](https://bymankirat.github.io/ireland-census-health/) · [Code](https://github.com/bymankirat/ireland-census-health) |
 | River low-flow warning | [Report](https://bymankirat.github.io/irish-water-low-flow-warning/) · [Code](https://github.com/bymankirat/irish-water-low-flow-warning) |
+| What makes H7N9 different? (R, limma, fgsea, WGCNA) | [Report](https://bymankirat.github.io/H7N9-Transcriptomics-Pipeline/) · [Code](https://github.com/bymankirat/H7N9-Transcriptomics-Pipeline) |
 | Irish unemployment outlook | [Report](https://bymankirat.github.io/ireland-unemployment-outlook/) · [Code](https://github.com/bymankirat/ireland-unemployment-outlook) |
 </details>
 

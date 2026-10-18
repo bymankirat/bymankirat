@@ -247,6 +247,26 @@ def vis_jobs():
             f'<text x="{x0 + 4:.1f}" y="{VY0 + 8}" font-family="{MONO}" font-size="10" fill="{MUTED}">forecast</text>')
 
 
+def vis_h7n9():
+    # PCA-style paths: three strains drift along PC1, H7N9 peels off on its own axis
+    out = [frame()]
+    x0, y0 = VX0 + 10, VY1 - 22
+    paths = [(CY, [(x0, y0), (x0 + 40, y0 + 2), (x0 + 110, y0 + 8), (x0 + 175, y0 + 14)]),
+             (LIME, [(x0, y0), (x0 + 45, y0 + 4), (x0 + 120, y0 + 5), (x0 + 185, y0 + 10)]),
+             (VI, [(x0, y0), (x0 + 50, y0 - 6), (x0 + 125, y0 - 8), (x0 + 190, y0 - 6)]),
+             (PK, [(x0, y0), (x0 + 30, y0 - 12), (x0 + 75, y0 - 44), (x0 + 120, y0 - 78)])]
+    for i, (c, pts) in enumerate(paths):
+        d = "M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+        w = 3 if c == PK else 1.8
+        out.append(f'<path class="draw" pathLength="1" style="animation-delay:{i * .25:.2f}s" d="{d}" fill="none" stroke="{c}" stroke-width="{w}" stroke-opacity="{1 if c == PK else .7}"{" filter=\"url(#neonh7n9)\"" if c == PK else ""}/>')
+        for j, (x, y) in enumerate(pts[1:], 1):
+            out.append(f'<circle class="pop" style="animation-delay:{i * .25 + j * .3:.2f}s" cx="{x:.1f}" cy="{y:.1f}" r="{2 + j}" fill="{c}" fill-opacity="{1 if c == PK else .75}"/>')
+    ex, ey = paths[3][1][-1]
+    out.append(f'<circle class="ring" cx="{ex:.1f}" cy="{ey:.1f}" r="6" fill="none" stroke="{PK}"/>')
+    out.append(f'<text x="{ex + 10:.1f}" y="{ey + 4:.1f}" font-family="{MONO}" font-size="10" fill="{PK}">H7N9 24 h</text>')
+    return "".join(out)
+
+
 CARDS = [
     ("trials", "CLINICAL TRIALS · PYTHON", "Why clinical trials stop early", "40,124 trials · interactive trial explorer", "1 in 6", "stopped early", ["scikit-learn", "API", "risk model"], vis_trials, CY),
     ("cdisc", "CLINICAL · R · CDISC", "Trial safety: SDTM to ADaM", "Alzheimer's drug trial · 254 patients", "100%", "independent QC agreement", ["admiral", "survival", "SQL"], vis_km, PK),
@@ -255,6 +275,7 @@ CARDS = [
     ("load", "ENERGY · FORECASTING", "Irish electricity demand", "Day-ahead forecast with prediction intervals", "34%", "better than benchmark", ["gradient boosting", "time series"], vis_load, CY),
     ("health", "PUBLIC HEALTH · CENSUS", "Health and deprivation", "3,420 Irish communities, Census 2022", "63%", "explained by social factors", ["regression", "clustering"], vis_health, VI),
     ("flow", "WATER · EARLY WARNING", "River low-flow warning", "7-day warning from 21 years of data", "4 of 4", "episodes flagged a week ahead", ["random forest", "hydrology"], vis_flow, CY),
+    ("h7n9", "VIROLOGY · R · TRANSCRIPTOMICS", "What makes H7N9 different?", "4 flu strains × 4 time points · 78 arrays", "1,279", "genes unique to H7N9 at 24 h", ["limma", "fgsea", "WGCNA"], vis_h7n9, PK),
     ("jobs", "LABOUR MARKET · FORECASTING", "Irish unemployment outlook", "Four models tested on 56 unseen months", "56", "months of honest backtesting", ["time series", "backtesting"], vis_jobs, PK),
 ]
 
@@ -413,7 +434,7 @@ def terminal():
 def stats():
     Wd, Hd = 1200, 150
     uid = "stats"
-    items = [("16", "research and data projects"), ("8", "live interactive reports"), ("40,124", "clinical trials analysed"), ("100GB+", "sequencing data processed")]
+    items = [("16", "research and data projects"), ("9", "live interactive reports"), ("40,124", "clinical trials analysed"), ("100GB+", "sequencing data processed")]
     tw = (Wd - 40 - 3 * 16) / 4
     out = []
     for i, (v, l) in enumerate(items):
