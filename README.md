@@ -52,6 +52,7 @@
 | River low-flow warning | [Report](https://bymankirat.github.io/irish-water-low-flow-warning/) · [Code](https://github.com/bymankirat/irish-water-low-flow-warning) |
 | What makes H7N9 different? (R, limma, fgsea, WGCNA) | [Report](https://bymankirat.github.io/H7N9-Transcriptomics-Pipeline/) · [Code](https://github.com/bymankirat/H7N9-Transcriptomics-Pipeline) |
 | SOG1 in banana, phase 2 (Python, HMMER, IQ-TREE, dN/dS) | [Report](https://bymankirat.github.io/SOG1-Banana-Comparative-Genomics/) · [Code](https://github.com/bymankirat/SOG1-Banana-Comparative-Genomics) |
+| Glypican-3 across 33 cancers (Python, TCGA + GTEx, Cox, GSEA, AlphaFold) | [Phase 2](https://bymankirat.github.io/GPC3-Pan-Cancer-Biomarker/) · [Phase 1](https://bymankirat.github.io/GPC3-Pan-Cancer-Biomarker/phase1.html) · [Code](https://github.com/bymankirat/GPC3-Pan-Cancer-Biomarker) |
 | Irish unemployment outlook | [Report](https://bymankirat.github.io/ireland-unemployment-outlook/) · [Code](https://github.com/bymankirat/ireland-unemployment-outlook) |
 </details>
 
