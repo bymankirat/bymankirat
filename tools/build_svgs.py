@@ -461,7 +461,7 @@ def terminal():
 def stats():
     Wd, Hd = 1200, 150
     uid = "stats"
-    items = [("17", "research and data projects"), ("10", "live interactive reports"), ("40,124", "clinical trials analysed"), ("100GB+", "sequencing data processed")]
+    items = [("17", "research and data projects"), ("10", "live interactive reports"), ("40,124", "clinical trials analysed"), ("24", "people in my MSc thesis cohort")]
     tw = (Wd - 40 - 3 * 16) / 4
     out = []
     for i, (v, l) in enumerate(items):
@@ -473,7 +473,7 @@ def stats():
 .in{{}}
 {REDUCED}
 </style>"""
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{Wd}" height="{Hd}" viewBox="0 0 {Wd} {Hd}" role="img" aria-label="17 projects, 10 live interactive reports, 40,124 clinical trials analysed, 100GB+ sequencing data processed">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{Wd}" height="{Hd}" viewBox="0 0 {Wd} {Hd}" role="img" aria-label="17 projects, 10 live interactive reports, 40,124 clinical trials analysed, 24 people in my MSc thesis cohort">
 {css}{defs_common(uid)}
 <rect width="{Wd}" height="{Hd}" rx="18" fill="{BG}"/>
 {''.join(out)}

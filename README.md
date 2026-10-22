@@ -8,7 +8,7 @@
 
 <img src="assets/about.svg" width="100%" alt="whoami: bioinformatician and data analyst, MSc Bioinformatics and Computational Biology, University College Cork. Background: NGS assay development, 16S microbiome, qPCR and in vivo studies, now Python, R and SQL pipelines. Every project: data fingerprinted, automatic quality checks, tested on unseen data, beats a simple baseline, uncertainty shown, interactive report. Looking for graduate and junior roles in bioinformatics, clinical / life-science data and data analysis, and PhD positions.">
 
-<img src="assets/stats.svg" width="100%" alt="17 research and data projects · 10 live interactive reports · 40,124 clinical trials analysed · 100GB+ sequencing data processed">
+<img src="assets/stats.svg" width="100%" alt="17 research and data projects · 10 live interactive reports · 40,124 clinical trials analysed · 24 people in my MSc thesis cohort">
 
 <img src="assets/section-work.svg" width="100%" alt="Featured work">
 
@@ -64,7 +64,7 @@
 <summary><b>🧬 Research experience</b></summary>
 <br>
 
-- **MSc thesis · IBIMA Plataforma BIONAND, Málaga (2026):** gut microbiota and faecal metabolomics after bariatric surgery; 100GB+ of 16S rRNA sequencing data in QIIME2 and multi-omics integration in R (mixOmics), 15+ candidate biomarkers
+- **MSc thesis · IBIMA Plataforma BIONAND, Málaga (2026):** gut microbiota and faecal metabolomics in 16 bariatric surgery patients (before and 3 months after) and 8 lean controls; 16S rRNA in QIIME2, multi-omics integration in R (mixOmics)
 - **R&D · Premas Life Sciences, New Delhi (2024-25):** NGS diagnostic kits for *Mycobacterium tuberculosis* and 3 other infections; Illumina workflow 20% more efficient
 - **Research · NABI, Mohali (2023, 2024):** *Cyp19a1* expression across human and mouse models; *Ma-SOG1* expression vectors in banana, followed up in [phase 2](https://bymankirat.github.io/SOG1-Banana-Comparative-Genomics/) across 17 plant genomes
 - **Summer research · DS Kothari Centre, Miranda House (2023):** microtomy and H&E staining, research poster
