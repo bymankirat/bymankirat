@@ -48,12 +48,18 @@
 | Barley, Weather and Beer | [Report](https://bymankirat.github.io/barley-weather-beer/) · [Code](https://github.com/bymankirat/barley-weather-beer) |
 | Cork & Dublin 2040 grid plans | [Cork](https://bymankirat.github.io/cork-2040-grid/) · [Dublin](https://bymankirat.github.io/cork-2040-grid/dublin/) · [Code](https://github.com/bymankirat/cork-2040-grid) |
 | Irish electricity demand | [Report](https://bymankirat.github.io/ireland-electricity-demand/) · [Code](https://github.com/bymankirat/ireland-electricity-demand) |
+| Wind turned away by the all-island grid (checked against EirGrid, r = 0.86) | [Report](https://bymankirat.github.io/ireland-wind-dispatch-down/) · [Code](https://github.com/bymankirat/ireland-wind-dispatch-down) |
 | Health and deprivation | [Report](https://bymankirat.github.io/ireland-census-health/) · [Code](https://github.com/bymankirat/ireland-census-health) |
 | River low-flow warning | [Report](https://bymankirat.github.io/irish-water-low-flow-warning/) · [Code](https://github.com/bymankirat/irish-water-low-flow-warning) |
 | What makes H7N9 different? (R, limma, fgsea, WGCNA) | [Report](https://bymankirat.github.io/H7N9-Transcriptomics-Pipeline/) · [Code](https://github.com/bymankirat/H7N9-Transcriptomics-Pipeline) |
 | SOG1 in banana, phase 2 (Python, HMMER, IQ-TREE, dN/dS) | [Report](https://bymankirat.github.io/SOG1-Banana-Comparative-Genomics/) · [Code](https://github.com/bymankirat/SOG1-Banana-Comparative-Genomics) |
 | Glypican-3 across 33 cancers (Python, TCGA + GTEx, Cox, GSEA, AlphaFold) | [Phase 2](https://bymankirat.github.io/GPC3-Pan-Cancer-Biomarker/) · [Phase 1](https://bymankirat.github.io/GPC3-Pan-Cancer-Biomarker/phase1.html) · [Code](https://github.com/bymankirat/GPC3-Pan-Cancer-Biomarker) |
 | Irish unemployment outlook | [Report](https://bymankirat.github.io/ireland-unemployment-outlook/) · [Code](https://github.com/bymankirat/ireland-unemployment-outlook) |
+| CYP19A1 across human, mouse and ovarian cancer (R, GTEx, TCGA) | [Report](https://bymankirat.github.io/CYP19A1-Expression-Ovarian-R/) · [Code](https://github.com/bymankirat/CYP19A1-Expression-Ovarian-R) |
+| Microtomy and H&E image analysis | [Report](https://bymankirat.github.io/HE-Histology-Image-Analysis/) · [Code](https://github.com/bymankirat/HE-Histology-Image-Analysis) |
+| Store KPI controlling toolkit (simulated data) | [Report](https://bymankirat.github.io/Store-KPI-Controlling-Toolkit/) · [Code](https://github.com/bymankirat/Store-KPI-Controlling-Toolkit) |
+| Subscriber propensity and opportunity map (simulated subscribers) | [Code](https://github.com/bymankirat/Subscriber-Propensity-Opportunity-Map) |
+| Wine classification with SVM (group project, UCC) | [Report](https://bymankirat.github.io/DATA-ENG-SVM-REGRESSION-/) · [Code](https://github.com/bymankirat/DATA-ENG-SVM-REGRESSION-) |
 </details>
 
 <img src="assets/section-tools.svg" width="100%" alt="Tools and methods">
