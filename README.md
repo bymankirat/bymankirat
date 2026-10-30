@@ -20,7 +20,7 @@
 <td width="50%"><a href="https://bymankirat.github.io/cdisc-pilot-analysis/"><img src="assets/card-cdisc.svg" width="100%" alt="Clinical trial safety analysis, SDTM to ADaM, with 100% independent QC agreement"></a></td>
 </tr>
 <tr>
-<td width="50%"><a href="https://bymankirat.github.io/barley-weather-beer/"><img src="assets/card-barley.svg" width="100%" alt="Barley, Weather and Beer"></a></td>
+<td width="50%"><a href="https://bymankirat.github.io/ireland-wind-dispatch-down/"><img src="assets/card-wind.svg" width="100%" alt="Wind turned away by the all-island grid"></a></td>
 <td width="50%"><a href="https://bymankirat.github.io/cork-2040-grid/"><img src="assets/card-grid.svg" width="100%" alt="Cork and Dublin 2040 grid plans"></a></td>
 </tr>
 <tr>
@@ -45,7 +45,6 @@
 |---|---|
 | Why clinical trials stop early | [Report](https://bymankirat.github.io/clinical-trial-risk/) · [Code](https://github.com/bymankirat/clinical-trial-risk) |
 | Clinical trial safety, SDTM to ADaM (R, CDISC, admiral) | [Report](https://bymankirat.github.io/cdisc-pilot-analysis/) · [Code](https://github.com/bymankirat/cdisc-pilot-analysis) |
-| Barley, Weather and Beer | [Report](https://bymankirat.github.io/barley-weather-beer/) · [Code](https://github.com/bymankirat/barley-weather-beer) |
 | Cork & Dublin 2040 grid plans | [Cork](https://bymankirat.github.io/cork-2040-grid/) · [Dublin](https://bymankirat.github.io/cork-2040-grid/dublin/) · [Code](https://github.com/bymankirat/cork-2040-grid) |
 | Irish electricity demand | [Report](https://bymankirat.github.io/ireland-electricity-demand/) · [Code](https://github.com/bymankirat/ireland-electricity-demand) |
 | Wind turned away by the all-island grid (checked against EirGrid, r = 0.86) | [Report](https://bymankirat.github.io/ireland-wind-dispatch-down/) · [Code](https://github.com/bymankirat/ireland-wind-dispatch-down) |
