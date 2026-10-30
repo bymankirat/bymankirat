@@ -35,6 +35,10 @@
 <td width="50%"><a href="https://bymankirat.github.io/SOG1-Banana-Comparative-Genomics/"><img src="assets/card-sog1.svg" width="100%" alt="SOG1 in banana, phase 2: 17 plant genomes, ML tree, SOG1 binding sites 3 times enriched at target genes"></a></td>
 <td width="50%"><a href="https://bymankirat.github.io/ireland-unemployment-outlook/"><img src="assets/card-jobs.svg" width="100%" alt="Irish unemployment outlook"></a></td>
 </tr>
+<tr>
+<td width="50%"><a href="https://bymankirat.github.io/cork-commuter-rail-2040/"><img src="assets/card-rail.svg" width="100%" alt="Cork commuter rail 2040: who the planned new stations would reach"></a></td>
+<td width="50%"></td>
+</tr>
 </table>
 
 <details>
@@ -46,6 +50,7 @@
 | Why clinical trials stop early | [Report](https://bymankirat.github.io/clinical-trial-risk/) · [Code](https://github.com/bymankirat/clinical-trial-risk) |
 | Clinical trial safety, SDTM to ADaM (R, CDISC, admiral) | [Report](https://bymankirat.github.io/cdisc-pilot-analysis/) · [Code](https://github.com/bymankirat/cdisc-pilot-analysis) |
 | Cork & Dublin 2040 grid plans | [Cork](https://bymankirat.github.io/cork-2040-grid/) · [Dublin](https://bymankirat.github.io/cork-2040-grid/dublin/) · [Code](https://github.com/bymankirat/cork-2040-grid) |
+| Cork commuter rail 2040 | [Report](https://bymankirat.github.io/cork-commuter-rail-2040/) · [Map](https://bymankirat.github.io/cork-commuter-rail-2040/map.html) · [Code](https://github.com/bymankirat/cork-commuter-rail-2040) |
 | Irish electricity demand | [Report](https://bymankirat.github.io/ireland-electricity-demand/) · [Code](https://github.com/bymankirat/ireland-electricity-demand) |
 | Wind turned away by the all-island grid (checked against EirGrid, r = 0.86) | [Report](https://bymankirat.github.io/ireland-wind-dispatch-down/) · [Code](https://github.com/bymankirat/ireland-wind-dispatch-down) |
 | Health and deprivation | [Report](https://bymankirat.github.io/ireland-census-health/) · [Code](https://github.com/bymankirat/ireland-census-health) |
