@@ -421,10 +421,55 @@ def card(slug, fn, kick, title, sub, kpi, kpil, kind, c, seed):
            ".tw{animation:tw 2.6s steps(2) infinite}@keyframes tw{50%{opacity:.15}}")
     save(f"card-{slug}.svg", W, H, "".join(b), label, css)
 
+
+# ------------------------------------------------------------------ 6a. featured cartridge: SwapSeq, my open-source tool
+def featured():
+    W, H, u = 1200, 400, "sw"
+    b = [crt_defs(u)]
+    b.append(f'<rect x="6" y="6" width="{W-12}" height="{H-12}" rx="16" fill="{BG}" stroke="{AMB}" stroke-width="4"/>')
+    b.append(f'<text class="m" x="44" y="56" font-size="14" fill="{AMB}" letter-spacing="2"><tspan class="blink">★</tspan> NEW GAME · MY OPEN-SOURCE TOOL · v1.1.1 · WEB + R</text>')
+    g, w = ptext("SWAPSEQ", 44, 78, 9, GRN)
+    b.append(f'<g filter="url(#gl{u})">{g}</g>')
+    b.append(f'<text class="m" x="44" y="178" font-size="19" fill="{INK}">Catches swapped tubes and wrong labels in</text>')
+    b.append(f'<text class="m" x="44" y="202" font-size="19" fill="{INK}">longitudinal microbiome studies. Runs in your browser.</text>')
+    kp = [("92%", "swaps flagged, adult gut", PNK), ("30", "public datasets graded", CYN), ("16,336", "samples in the Atlas", VIO)]
+    x = 44
+    for i, (k, l, c) in enumerate(kp):
+        g, kw = ptext(k, x, 236, 5, c)
+        b.append(f'<g class="a{i}" filter="url(#gl{u})">{g}</g>')
+        b.append(f'<text class="m a{i}" x="{x}" y="296" font-size="14" fill="{SAGE}">{l}</text>')
+        x += max(kw, 200) + 34
+    b.append(f'<text class="m" x="44" y="{H-40}" font-size="15" font-weight="700" fill="{GRN}"><tspan class="blink">▶</tspan> RUN TOOL   <tspan fill="{AMB}">▶ ATLAS</tspan>   <tspan fill="{VIO}">▶ R PACKAGE</tspan></text>')
+    # a 96-well plate where two wells trade places: the error SwapSeq finds
+    px, py, cs = 790, 74, 30
+    b.append(f'<rect x="{px-18}" y="{py-18}" width="{12*cs+24}" height="{8*cs+24}" rx="10" fill="{BG2}" stroke="{SAGE}" stroke-width="3"/>')
+    import random
+    r = random.Random(7)
+    pal = [GRN2, "#2C6E4F", "#3A8C60", "#24563F"]
+    for row in range(8):
+        for col in range(12):
+            cx, cy = px + col * cs + 3, py + row * cs + 3
+            if (row, col) == (4, 3):
+                b.append(f'<rect class="swA" x="{cx}" y="{cy}" width="{cs-8}" height="{cs-8}" rx="4"/>')
+            elif (row, col) == (4, 8):
+                b.append(f'<rect class="swB" x="{cx}" y="{cy}" width="{cs-8}" height="{cs-8}" rx="4"/>')
+            else:
+                b.append(f'<rect x="{cx}" y="{cy}" width="{cs-8}" height="{cs-8}" rx="4" fill="{r.choice(pal)}"/>')
+    for k in range(8):
+        b.append(f'<text class="m" x="{px-12}" y="{py+k*cs+18}" font-size="10" fill="{DIM}" text-anchor="middle">{"ABCDEFGH"[k]}</text>')
+    b.append(f'<rect class="hit" x="{px+3*cs-1}" y="{py+4*cs-1}" width="{5*cs+cs-4}" height="{cs-4}" fill="none" stroke="{PNK}" stroke-width="3" stroke-dasharray="6 4"/>')
+    b.append(f'<text class="m hit" x="{px+6*cs-2}" y="{py+8*cs+30}" text-anchor="middle" font-size="14" font-weight="700" fill="{PNK}">E4 ⇄ E9  SWAP FOUND</text>')
+    b.append(crt_overlay(u, 6, 6, W - 12, H - 12, 16))
+    css = ("".join(appear(i, .4, .35, 3) for i in range(3)) +
+           f".swA{{animation:sa 4s steps(1) infinite}}.swB{{animation:sb 4s steps(1) infinite}}"
+           f"@keyframes sa{{0%,49%{{fill:{AMB}}}50%,100%{{fill:{PNK}}}}}@keyframes sb{{0%,49%{{fill:{PNK}}}50%,100%{{fill:{AMB}}}}}"
+           ".hit{animation:ht 4s steps(1) infinite}@keyframes ht{0%,49%{opacity:0}50%,100%{opacity:1}}")
+    save("swapseq.svg", W, H, "".join(b), "SwapSeq, my open-source tool (v1.1.1, web and R): catches swapped tubes and wrong labels in longitudinal microbiome studies. 92% of swaps flagged in adult gut 16S; 30 public datasets and 16,336 samples graded in the SwapSeq Atlas", css)
+
 # ------------------------------------------------------------------ 7. inventory (no fake skill levels)
 def inventory():
     W, u = 1200, "i"
-    groups = [("LANGUAGES", AMB, ["Python", "R", "SQL"]),
+    groups = [("LANGUAGES", AMB, ["Python", "R", "SQL", "JavaScript"]),
               ("OMICS", PNK, ["QIIME2", "DADA2", "phyloseq", "mixOmics", "ANCOM-BC2", "limma", "WGCNA", "fgsea", "HMMER", "IQ-TREE"]),
               ("CLINICAL", VIO, ["CDISC SDTM", "ADaM", "admiral", "survival", "double programming"]),
               ("STATS + ML", CYN, ["scikit-learn", "gradient boosting", "random forest", "CUSUM", "Monte Carlo", "time series"]),
@@ -455,7 +500,7 @@ def inventory():
             b.append(f'<text class="m" x="{x+22}" y="{y+23}" font-size="14" fill="{INK}">{it.replace("&","&amp;")}</text>')
         y += 46
     b.append(crt_overlay(u, 6, 6, W - 12, H - 12, 14))
-    save("inventory.svg", W, H, "".join(b), "Inventory: Python, R, SQL; QIIME2, DADA2, phyloseq, mixOmics, ANCOM-BC2, limma, WGCNA, fgsea, HMMER, IQ-TREE; CDISC SDTM, ADaM, admiral, survival analysis, double programming; scikit-learn, gradient boosting, random forest, CUSUM, Monte Carlo, time series; Power BI, DAX, DuckDB, pandas, Git, GitHub Pages; NGS, qPCR, Western blot, cloning, microtomy, H&E")
+    save("inventory.svg", W, H, "".join(b), "Inventory: Python, R, SQL, JavaScript; QIIME2, DADA2, phyloseq, mixOmics, ANCOM-BC2, limma, WGCNA, fgsea, HMMER, IQ-TREE; CDISC SDTM, ADaM, admiral, survival analysis, double programming; scikit-learn, gradient boosting, random forest, CUSUM, Monte Carlo, time series; Power BI, DAX, DuckDB, pandas, Git, GitHub Pages; NGS, qPCR, Western blot, cloning, microtomy, H&E")
 
 # ------------------------------------------------------------------ 8. footer
 def footer():
@@ -467,7 +512,7 @@ def footer():
     save("footer.svg", W, H, "".join(b), "Continue? PhD supervisors, labs and data teams: let's talk")
 
 if __name__ == "__main__":
-    header(); about(); scores(); worldmap(); inventory(); footer()
+    header(); about(); scores(); worldmap(); inventory(); footer(); featured()
     banner("sec-projects.svg", "SELECT PROJECT", PNK, "Select a project")
     banner("sec-map.svg", "WORLD MAP", GRN, "World map")
     banner("sec-inv.svg", "INVENTORY", AMB, "Inventory")

@@ -19,6 +19,10 @@
 
 <sub>Click a cartridge to run its live report. Every project runs end to end on real public data with one command.</sub>
 
+<a href="https://bymankirat.github.io/swapseq/"><img src="assets/retro/swapseq.svg" width="100%" alt="SwapSeq, my open-source tool (v1.1.1, web and R): catches swapped tubes and wrong labels in longitudinal microbiome studies. 92% of swaps flagged in adult gut 16S; 30 public datasets and 16,336 samples graded in the SwapSeq Atlas"></a>
+
+<p align="center"><a href="https://bymankirat.github.io/swapseq/"><b>▶ Run SwapSeq</b></a> · <a href="https://bymankirat.github.io/swapseq/atlas/"><b>SwapSeq Atlas</b></a> · <a href="https://github.com/bymankirat/swapseqr"><b>R package (swapseqr)</b></a> · <a href="https://bymankirat.github.io/swapseq/validation.html">Methods &amp; validation</a> · <a href="https://doi.org/10.5281/zenodo.23963612">DOI</a></p>
+
 <table>
 <tr>
 <td width="50%"><a href="https://bymankirat.github.io/clinical-trial-risk/"><img src="assets/retro/card-trials.svg" width="100%" alt="Why clinical trials stop early: 40,124 trials, 1 in 6 stopped early"></a></td>
@@ -56,6 +60,9 @@
 
 | Project | Links |
 |---|---|
+| SwapSeq: sample mix-up checker for microbiome studies (JavaScript, v1.1.1) | [Tool](https://bymankirat.github.io/swapseq/) · [Methods](https://bymankirat.github.io/swapseq/validation.html) · [Code](https://github.com/bymankirat/swapseq) · [DOI](https://doi.org/10.5281/zenodo.23963612) |
+| SwapSeq Atlas: how checkable are 30 public microbiome datasets? | [Atlas](https://bymankirat.github.io/swapseq/atlas/) · [Code and data](https://github.com/bymankirat/swapseq/tree/main/atlas) |
+| swapseqr: SwapSeq in R (phyloseq or count matrix) | [Code](https://github.com/bymankirat/swapseqr) |
 | Why clinical trials stop early | [Report](https://bymankirat.github.io/clinical-trial-risk/) · [Code](https://github.com/bymankirat/clinical-trial-risk) |
 | Clinical trial safety, SDTM to ADaM (R, CDISC, admiral) | [Report](https://bymankirat.github.io/cdisc-pilot-analysis/) · [Code](https://github.com/bymankirat/cdisc-pilot-analysis) |
 | Glypican-3 across 33 cancers (Python, TCGA + GTEx, Cox, GSEA, AlphaFold) | [Phase 2](https://bymankirat.github.io/GPC3-Pan-Cancer-Biomarker/) · [Phase 1](https://bymankirat.github.io/GPC3-Pan-Cancer-Biomarker/phase1.html) · [Code](https://github.com/bymankirat/GPC3-Pan-Cancer-Biomarker) |
@@ -77,7 +84,7 @@
 
 <img src="assets/retro/sec-inv.svg" width="100%" alt="Inventory">
 
-<img src="assets/retro/inventory.svg" width="100%" alt="Inventory: Python, R, SQL; QIIME2, DADA2, phyloseq, mixOmics, ANCOM-BC2, limma, WGCNA, fgsea, HMMER, IQ-TREE; CDISC SDTM, ADaM, admiral, survival analysis, double programming; scikit-learn, gradient boosting, random forest, CUSUM, Monte Carlo, time series; Power BI, DAX, DuckDB, pandas, Git, GitHub Pages; NGS, qPCR, Western blot, cloning, microtomy, H&E">
+<img src="assets/retro/inventory.svg" width="100%" alt="Inventory: Python, R, SQL, JavaScript; QIIME2, DADA2, phyloseq, mixOmics, ANCOM-BC2, limma, WGCNA, fgsea, HMMER, IQ-TREE; CDISC SDTM, ADaM, admiral, survival analysis, double programming; scikit-learn, gradient boosting, random forest, CUSUM, Monte Carlo, time series; Power BI, DAX, DuckDB, pandas, Git, GitHub Pages; NGS, qPCR, Western blot, cloning, microtomy, H&E">
 
 <details>
 <summary><b>🧬 Save file: research experience</b></summary>
