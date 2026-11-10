@@ -432,7 +432,7 @@ def featured():
     b.append(f'<g filter="url(#gl{u})">{g}</g>')
     b.append(f'<text class="m" x="44" y="178" font-size="19" fill="{INK}">Catches swapped tubes and wrong labels in</text>')
     b.append(f'<text class="m" x="44" y="202" font-size="19" fill="{INK}">longitudinal microbiome studies. Runs in your browser.</text>')
-    kp = [("92%", "swaps flagged, adult gut", PNK), ("36", "public datasets graded", CYN), ("18,317", "samples in the Atlas", VIO)]
+    kp = [("92%", "swaps flagged, adult gut", PNK), ("42", "public datasets graded", CYN), ("20,974", "samples in the Atlas", VIO)]
     x = 44
     for i, (k, l, c) in enumerate(kp):
         g, kw = ptext(k, x, 236, 5, c)
@@ -464,7 +464,7 @@ def featured():
            f".swA{{animation:sa 4s steps(1) infinite}}.swB{{animation:sb 4s steps(1) infinite}}"
            f"@keyframes sa{{0%,49%{{fill:{AMB}}}50%,100%{{fill:{PNK}}}}}@keyframes sb{{0%,49%{{fill:{PNK}}}50%,100%{{fill:{AMB}}}}}"
            ".hit{animation:ht 4s steps(1) infinite}@keyframes ht{0%,49%{opacity:0}50%,100%{opacity:1}}")
-    save("swapseq.svg", W, H, "".join(b), "SwapSeq, my open-source tool (v1.1.1, web and R): catches swapped tubes and wrong labels in longitudinal microbiome studies. 92% of swaps flagged in adult gut 16S; 36 public datasets and 18,317 samples graded in the SwapSeq Atlas", css)
+    save("swapseq.svg", W, H, "".join(b), "SwapSeq, my open-source tool (v1.1.1, web and R): catches swapped tubes and wrong labels in longitudinal microbiome studies. 92% of swaps flagged in adult gut 16S; 42 public datasets and 20,974 samples graded in the SwapSeq Atlas", css)
 
 # ------------------------------------------------------------------ 7. inventory (no fake skill levels)
 def inventory():
